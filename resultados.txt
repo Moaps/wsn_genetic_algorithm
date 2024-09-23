@@ -1,0 +1,12 @@
+Parametros do Algoritmo Genetico:
+Distancia Minima: 12
+Distancia Maxima: 13
+Energia Minima: 2
+Energia Maxima: 13
+Custo de Comunicação Manimo: 12
+Custo de Comunicação Maximo: 13
+Quantidade de Nós: 12
+
+Resultados:
+Melhor Caminho Encontrado: [ 3 11  4  2  0  8  9  5 10  7  6  1]
+Custo Total do Caminho: 87
