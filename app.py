@@ -3,7 +3,7 @@
 # Trabalho realizado para nota na matéria Inteligência Artificial 2
 # Docente: Luis Fernando de Almeida
 # Discentes:    Clariana Costa  -  RA: 10112363
-#               Lara Marques    -  RA: 10102384
+#               Lara Marques    -  RA: 10102584
 #
 ######################################################################
 
@@ -102,7 +102,7 @@ class App(customtkinter.CTk):
         self.nf_image_label.grid(row=2, column=0, padx=20, pady=0, sticky="n")
 
         # Informações dos docentes e discentes
-        self.nf_subtitle = customtkinter.CTkLabel(self.main_page, text="Docente: Luis Fernando de Almeida\nDiscentes: Clariana (RA 10112363) e Lara (RA 10102384)",
+        self.nf_subtitle = customtkinter.CTkLabel(self.main_page, text="Docente: Luis Fernando de Almeida\nDiscentes: Clariana (RA 10112363) e Lara (RA 10102584)",
                                                   font=customtkinter.CTkFont(size=14, weight="normal"))
         self.nf_subtitle.grid(row=3, column=0, padx=20, pady=(20, 0), sticky="n")
 
