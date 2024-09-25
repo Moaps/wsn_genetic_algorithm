@@ -80,8 +80,6 @@ To run the program, use the following command in the terminal:
 python app.py
 ```
 
-Replace `app.py` with the name of the main program file.
-
 ---
 
 ## Code Structure
