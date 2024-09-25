@@ -54,6 +54,18 @@ class AlgoritmoGenetico:
             idx1, idx2 = rd.sample(range(self.problema.n_nos), 2)
             descendentes[idx_descendente][idx1], descendentes[idx_descendente][idx2] = descendentes[idx_descendente][idx2], descendentes[idx_descendente][idx1]
         return descendentes
+    
+    def executar_1_geracao(self):
+        """ Executa o algoritmo genético. """
+        populacao = self.populacao_inicial()
+        aptidoes = self.calcular_aptidao(populacao)
+
+        descendentes = self.crossover(populacao, aptidoes)
+        descendentes = self.mutacao(descendentes)
+        populacao = self.nova_populacao(populacao, descendentes)
+        aptidoes = self.calcular_aptidao(populacao)  
+
+        return self.selecionar_melhor(populacao, aptidoes)
 
     def executar(self):
         """ Executa o algoritmo genético. """
