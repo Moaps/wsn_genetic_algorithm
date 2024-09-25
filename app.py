@@ -385,7 +385,7 @@ class App(customtkinter.CTk):
  
         self.input_frame_result_textbox.configure(state="normal")
         self.input_frame_result_textbox.delete("1.0", tk.END)
-        self.input_frame_result_textbox.insert(tk.END, str(melhor_solucao) + "\nCusto inicial: " + custo_inicial + "\nCusto final: " + custo_total + "\nGanho: " + str(percentual_ganho) + "%")
+        self.input_frame_result_textbox.insert(tk.END, "Custo inicial: " + custo_inicial + "\nCusto final: " + custo_total + "\nGanho: " + str(percentual_ganho) + "%\n\n" + str(melhor_solucao))
         self.input_frame_result_textbox.configure(state="disabled")
  
         self.salvar_resultados(melhor_solucao, solucao_inicial, custo_total, percentual_ganho)
